@@ -22,23 +22,8 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-**Contents**
 
-<!-- TOC -->
 
-- [Internet of Things before the hands-on lab setup guide](#internet-of-things-before-the-hands-on-lab-setup-guide)
-  - [Requirements](#requirements)
-  - [Before the hands-on lab](#before-the-hands-on-lab)
-    - [Task 1: Provision a resource group](#task-1-provision-a-resource-group)
-    - [Task 2: Setup a lab virtual machine](#task-2-setup-a-lab-virtual-machine)
-    - [Task 3: Provision Azure Databricks](#task-3-provision-azure-databricks)
-    - [Task 4: Create Databricks cluster](#task-4-create-databricks-cluster)
-    - [Task 5: Provision Power BI](#task-5-provision-power-bi)
-    - [Task 6: Connect to your Lab VM](#task-6-connect-to-your-lab-vm)
-    - [Task 7: Download Google Chrome](#task-7-download-google-chrome)
-    - [Task 8: Download Smart Meter Simulator project](#task-8-download-smart-meter-simulator-project)
-
-<!-- /TOC -->
 
 # Internet of Things before the hands-on lab setup guide
 
@@ -54,7 +39,6 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Before the hands-on lab
 
-Duration: 45 minutes
 
 In the Before the hands-on lab exercise, you will set up your environment for use in the rest of the hands-on lab. You should follow all the steps provided in the Before the hands-on lab section to prepare your environment **before attending** the hands-on lab. Failure to do so will significantly impact your ability to complete the lab within the time allowed.
 
@@ -62,7 +46,7 @@ In the Before the hands-on lab exercise, you will set up your environment for us
 
 
 
-### Task 5: Provision Power BI
+### Task : Provision Power BI
 
 If you do not already have a Power BI account:
 
@@ -75,7 +59,7 @@ If you do not already have a Power BI account:
 4. Provide **Country** and **Phone Number**. Click on **Get Started** twice.
    > **Note**: You can always return to your Power BI environment by navigating to <https://app.powerbi.com/>.
 
-### Task 6: Connect to your Lab VM
+### Task: Connect to your Lab VM
 
 In this task, you will create an RDP connection to your lab virtual machine (VM).
 
@@ -99,51 +83,14 @@ In this task, you will create an RDP connection to your lab virtual machine (VM)
 
 6. Enter the following credentials when prompted:
 
-   - **Username**: `demouser`
+   - **Username**: `AdminTecnun`
 
-   - **Password**: {Your password}
+   - **Password**: {check password in shared excel file}
 
 7. Select **Yes** to connect, if prompted that the identity of the remote computer cannot be verified.
 
    ![In the Remote Desktop Connection dialog box, a warning states that the identity of the remote computer cannot be verified, and asks if you want to continue anyway. At the bottom, the Yes button is highlighted.](./media/remote-desktop-connection-identity-verification.png 'Remote Desktop Connection dialog')
 
-8. Once logged in, launch the **Server Manager**. This should start automatically, but you can access it via the Start menu if it does not start.
 
-   ![The Server Manager tile is circled in the Start Menu.](./media/start-menu-server-manager.png 'Server Manager tile in the Start menu')
-
-9. Select **Local Server**, then select **On** next to **IE Enhanced Security Configuration**. **Note:** If the link says `Off`, skip ahead to the next task.
-
-   ![Screenshot of the Server Manager. In the left pane, Local Server is selected. In the right, Properties (For LabVM) pane, the IE Enhanced Security Configuration, which is set to On, is highlighted.](./media/windows-server-manager-ie-enhanced-security-configuration.png 'Server Manager')
-
-10. In the **Internet Explorer Enhanced Security Configuration** dialog, select **Off** under **Administrators**, then select **OK**.
-
-    ![Screenshot of the Internet Explorer Enhanced Security Configuration dialog box, with Administrators set to Off.](./media/internet-explorer-enhanced-security-configuration-dialog.png 'Internet Explorer Enhanced Security Configuration dialog box')
-
-11. Close the **Server Manager**.
-
-
-### Task 8: Download Smart Meter Simulator project
-
-Fabrikam has provided a Smart Meter Simulator that they use to simulate device registration, as well as the generation and transmission of telemetry data. They have asked you to use this as the starting point for integrating their smart meters with Azure.
-
-1. From your **LabVM**, download the starter project by downloading a .zip copy of the Internet of Things MCW GitHub repo.
-
-2. In your newly installed Chrome web browser, navigate to the Internet of Things MCW repo: <https://github.com/Microsoft/MCW-Internet-of-Things>.
-
-3. On the repo page, expand the **Code** button, then select **Download ZIP**.
-
-   ![Download .zip containing the Internet of Things MCW repository](media/git-hub-download-repo.png 'Download ZIP')
-
-4. Unzip the contents to the folder **C:\SmartMeter**.
-
-5. Navigate to the `SmartMeterSimulator.sln` file within the `Hands-on lab\lab-files\starter-project` folder and open it with **Visual Studio 2019**.
-
-6. Sign into Visual Studio or create an account, if prompted.
-
-7. If the Security Warning for SmartMeterSimulator window appears, un-check **Ask me for every project in this solution** and select **OK**.
-
-   ![The SmartMeterSimulator Security Warning window has the option to "Ask me for every project in this solution" highlighted.](./media/visual-studio-security-warning.png 'SmartMeterSimulator Security Warning')
-
-> **Note**: If you attempt to build the solution at this point, you will see many build errors. This is intentional. You will correct these in the exercises that follow.
 
 You should follow all steps provided _before_ performing the Hands-on lab.
