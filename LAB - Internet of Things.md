@@ -226,7 +226,7 @@ Fabrikam has left you a partially completed sample in the form of the Smart Mete
 
 ### Task 1: Implement device management with the IoT Hub
 
-1. On your **Lab VM**, open the file **/lab-files/starter-project/SmartMeterSimulator.sln** in **Visual Studio Code**. 
+1. On your **Lab VM**, open the folder **/lab-files/starter-project/SmartMeterSimulator** in **Visual Studio Code**. 
 1. From **Visual Studio Code **, open the file `DeviceManager.cs`.
 
 3. You will see a list of **TODO** tasks, where each task represents one line of code that needs to be completed. Complete the line of code below each **TODO** using the code below as a reference. If your task list is blank, **complete/copy TODO steps 1-5** as indicated in the code in the next step.
